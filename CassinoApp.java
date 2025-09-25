@@ -27,7 +27,12 @@ public class CassinoApp {
 
             switch (opcao) {
                 case 1:{
+                    if (conta.getSaldo() <= 0) {
+                        System.out.println("Você precisa de saldo para jogar.");
+                        break;
+                    }
                     menuJogos();
+                    break;
                 }
                 case 2:{
                     System.out.print("Valor do depósito: R$");

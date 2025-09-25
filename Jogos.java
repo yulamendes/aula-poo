@@ -79,7 +79,7 @@ public class Jogos {
         String esc[] = {"pedra", "papel", "tesoura"};
 
         if (escolha == pc) {
-            System.out.println("Empate!!! Você escolheu" + esc[escolha-1] + " e o computador escolheu" + esc[pc-1] + ".");
+            System.out.println("Empate!!! Você escolheu " + esc[escolha-1] + " e o computador escolheu" + esc[pc-1] + ".");
             return;
         }
 
@@ -89,10 +89,10 @@ public class Jogos {
 
         if (venceu) {
             conta.depositar(aposta * 3);
-            System.out.println("Você escolheu" + esc[escolha-1] + " e o computador escolheu" + esc[pc-1] + ". Parabéns, você ganhou R$:" + (aposta * 3));
+            System.out.println("Você escolheu " + esc[escolha-1] + " e o computador escolheu" + esc[pc-1] + ". Parabéns, você ganhou R$:" + (aposta * 3));
         } else {
             conta.perder(aposta);
-            System.out.println("Você escolheu" + esc[escolha-1] + " e o computador escolheu" + esc[pc-1] + ". Que pena, você perdeu R$:" + (aposta));
+            System.out.println("Você escolheu " + esc[escolha-1] + " e o computador escolheu" + esc[pc-1] + ". Que pena, você perdeu R$:" + (aposta));
         }
     }
 
